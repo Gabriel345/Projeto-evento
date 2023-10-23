@@ -15,6 +15,7 @@
             </div>
             <div class="col-md-12" id="description-container">
                 <h3>Sobre o evento:</h3>
+                <p class="event-escription">Dia do Evento {{date('d/m/Y',strtotime($event->date))}}</p>
                 <p class="event-escription">{{$event->description}}</p>
             </div>
 
