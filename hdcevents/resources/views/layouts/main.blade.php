@@ -24,8 +24,14 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="/">Eventos</a></li>
                     <li class="nav-item"><a href="/events/create">Criar Eventos</a></li>
-                    <li class="nav-item"><a href="/contato">Entrar</a></li>
-                    <li class="nav-item"><a href="/">Cadastrar</a></li>
+                    @auth
+                    <li class="nav-item"><a href="/dashboard">Meus Eventos</a></li>  
+                    @endauth
+                    @guest
+                        <li class="nav-item"><a href="/login">Entrar</a></li>
+                        <li class="nav-item"><a href="/register">Cadastrar</a></li>
+                    @endguest
+
                 </ul>
             </div>
         </nav>
