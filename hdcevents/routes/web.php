@@ -17,6 +17,7 @@ Route::get('/',[EventController::class, 'index'] );
 Route::get('/events/create',[EventController::class, 'create'] )->middleware('auth');
 Route::get('/events/{id}',[EventController::class, 'show'] );
 Route::post('/events',[EventController::class,'store'] );
+Route::delete('/events/{id}',[EventController::class, 'destroy'] );
 
 Route::get('/contato',function(){
     return view('contato');
@@ -30,6 +31,4 @@ Route::get('/produtos_teste/{id?}', function ($id=null) {
     return view('produto_teste',['id' =>$id]);
 });
 Route::get('/dashboard',[EventController::class, 'dashboard'] )->middleware('auth');
-
-
 ?>
