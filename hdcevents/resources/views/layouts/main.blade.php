@@ -15,21 +15,33 @@
 
 <body>
     <header>
-        <nav class="">
-            <div class="" id="navbar">
-                <a href="/" class="navbar-brand">
-                    <img src="/img/events-svgrepo-com.svg" alt="" srcset="">
-                    <img src=".../img/events-svgrepo-com.svg" alt="" srcset="">
-                </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a href="/" class="navbar-brand">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="/">Eventos</a></li>
-                    <li class="nav-item"><a href="/events/create">Criar Eventos</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/events/create">Criar Eventos</a>
+                    </li>
                     @auth
-                    <li class="nav-item"><a href="/dashboard">Meus Eventos</a></li>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dashboard">Meus Eventos</a>
+                        </li>
                     @endauth
                     @guest
-                        <li class="nav-item"><a href="/login">Entrar</a></li>
-                        <li class="nav-item"><a href="/register">Cadastrar</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Cadastrar</a>
+                        </li>
                     @endguest
 
                 </ul>

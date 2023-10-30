@@ -10,7 +10,7 @@
                 <h1>{{ $event->title }}</h1>
                 <p class="event-city"><ion-icon name="location-outline"></ion-icon>{{ $event->city }}</p>
                 <p class="event-participants"><ion-icon name="people-outline"></ion-icon>x-participantes</p>
-                <p class="event-owner"><ion-icon name="star-outline"></ion-icon>Dono evento</p>
+                <p class="event-owner"><ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
                 <a href="http://" class="btn btn-primary">Confirmar Presença</a>
             </div>
             <div class="col-md-12" id="description-container">
