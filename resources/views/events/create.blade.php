@@ -2,8 +2,7 @@
 @section('title', 'Criar Evento')
 @section('content')
     <div class="container-criar">
-
-        <h1>Crie um evento</h1>
+        <h1 style="text-align: center" >Crie um evento</h1>
         <div id="event-create-container" class="container p-5 my-5 border">
             <form action="/events" method="POST" enctype="multipart/form-data">
                 @csrf

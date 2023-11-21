@@ -25,7 +25,7 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Eventos</a>
+                        <a class="nav-link" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/events/create">Criar Eventos</a>
@@ -57,6 +57,23 @@
                 @yield('content')
             </div>
         </div>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget({
+                rootPah: '/app',
+                personalization: 'https://vlibras.gov.br/config/default_logo.json',
+                opacity: 0.5,
+                position: 'R',
+                avatar: 'random',
+            });
+          </script>
     </main>
     <footer>
         <p>HDC Events &copy;2023</p>
