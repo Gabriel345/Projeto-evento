@@ -1,22 +1,14 @@
-#navbar {
+.navbar-container-fluid {
     background-color: #18537a;
 }
-.navbar-nav {
-    height: 12vh;
-    position: relative;
-    left: 71%;
-    top: 10%;
+.navbar-brand{
+  font-size: 2rem;
 }
-.nav-link {
-    position: relative;
-    top: 22%;
-    color: #fff;
-    font-size: 1.5rem;
+.nav-link{
+  font-size: 1.5rem;
+  color: #fff;
 }
-.nav-link:hover {
-    color: #86c1e8;
 
-}
 
 #search-container {
     text-align: center;
@@ -75,6 +67,7 @@
 }
 footer {
   padding-top: 15vh;
+  color: #bac0c4;
 }
   .footer-text { margin-block: 20px 45px; }
   
