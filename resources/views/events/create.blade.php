@@ -2,12 +2,12 @@
 @section('title', 'Criar Evento')
 @section('content')
     <div class="container-criar">
-        <h1 style="text-align: center" >Crie um evento</h1>
+        <h1 style="text-align: center" >Crie seu evento</h1>
         <div id="event-create-container" class="container p-5 my-5 border">
             <form action="/events" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
-                    <label for="image">Imagem do evento:</label>
+                    <label for="image">Imagem do evento</label>
                     <input type="file" id="image" name="image" class="form-control-file">
                 </div>
                 <div class="form-group">
@@ -33,7 +33,7 @@
                     <label for="title">Descrição:</label>
                     <textarea name="description" id="description"class="form-control" placeholder="descrição do evento"></textarea>
                 </div>
-                <input type="submit" class="btn btm-primary" value="Criar Evento">
+                <input type="submit" class="bn632-hover bn25 btn-criar" value="Criar Evento">
             </form>
         </div>
     </div>

@@ -9,7 +9,7 @@
         <div class="form-group">
             <label for="image">Imagem do evento:</label>
             <input type="file" id="image" name="image" class="form-control-file">
-            <img src="/img/events/{{$event->image}}" alt="{{$event->title}}" class="img-preview">
+            <img src="/img/events/{{$event->image}}" alt="{{$event->title}}" class="img-preview img-criacao">
         </div>
         <div class="form-group">
             <label for="title">Evento:</label>
@@ -34,7 +34,7 @@
             <label for="title">Descrição:</label>
            <textarea name="description" id="description"class="form-control" placeholder="descrição do evento">{{$event->description}}</textarea>
         </div>
-        <input type="submit" class="btn btm-primary" value="Editar Evento">
+        <input type="submit" class="bn632-hover bn25 btn-criar" value="Salvar">
      </form>
 </div>
  @endsection

@@ -35,4 +35,6 @@ Route::get('/produtos_teste/{id?}', function ($id=null) {
     return view('produto_teste',['id' =>$id]);
 });
 Route::get('/dashboard',[EventController::class, 'dashboard'] )->middleware('auth');
+
+Route::post('/events/join/{id}',[EventController::class, 'joinEvent'])->middleware('auth');
 ?>

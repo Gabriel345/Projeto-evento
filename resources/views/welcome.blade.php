@@ -10,9 +10,8 @@
                         <img class="img-image" src="/images/imagemhome.jpg" alt="desenho marcando eventos">
                     </div>
                     <div class="col-lg-5 py-5">
-                        <h4 class="fw-lighter">CRIAÇÃO DE EVENTOS</h4>
-                        <h1 class="sub-title">Conectando Momentos, Criando Memórias: Seu Destino para Eventos Inesquecíveis!
-                        </h1>
+                        <h4 class="sub-title">Conectando momentos, criando memórias: <br> <span id="text-sub"> Seu destino para eventos inesquecíveis! </span>
+                        </h4>
                         <div class="row">
                             <div class="col-lg-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -22,7 +21,7 @@
                                 </svg>
                             </div>
                             <div class="col-lg-11">
-                                <p class="main-style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                                <p class="main-style"> Divulgue seu evento. </p>
                             </div>
                             <div class="col-lg-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -32,7 +31,7 @@
                                 </svg>
                             </div>
                             <div class="col-lg-11">
-                                <p class="main-style"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="main-style"> Crie esperiências inesquecíveis.</p>
                             </div>
                             <div class="col-lg-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -42,13 +41,13 @@
                                 </svg>
                             </div>
                             <div class="col-lg-11">
-                                <p class="main-style"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                                <p class="main-style"> Ajude quem precisa, faça o bem. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="container">
+                    <!-- <div class="container">
                         <a href="/"><button class="bn632-hover bn25"> Registrar </button></a>
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -63,9 +62,9 @@
 
 
     <div id="search-container" class="col-md-12">
-        <h3>Busque um evento</h3>
+        <h2>Busque um evento</h2>
         <form action="/" method="GET">
-            <label for="search">Buscar Eventos</label>
+            <label for="search"></label>
             <input type="text" id="search" name="search" class="form-control" placeholder="Procurar Evento">
         </form>
     </div>
@@ -73,7 +72,7 @@
         <h2>Buscando por: {{ $search }}</h2>
     @else
         <div id="events-container" class="col-md-12">
-            <h2>Proximos eventos</h2>
+            <h3>Proximos eventos</h3>
             <p>Veja os eventos dos próximos dias</p>
         </div>
     @endif
@@ -92,12 +91,11 @@
                         <p class="title">{{ $event->title }}</p>
                         <div class="separator"></div>
                         <p class="info"> {{ $event->city }}</p>
-                        <p class="price">Free</p>
+                        <p class="price"> free </p>
 
                         <div class="additional-info">
                             <p class="info">
                                 <i class="fas fa-map-marker-alt"></i>
-
                             </p>
                             <p class="info">
                                 <i class="far fa-calendar-alt"></i>
