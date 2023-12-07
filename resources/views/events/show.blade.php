@@ -7,10 +7,10 @@
                 <img src="/img/events/{{ $event->image }}" alt="capa do evento {{ $event->title }}" class="img-fluid">
             </div>
             <div id="info-container" class="col-md-6">
-                <h1>{{ $event->title }}</h1>
-                <p class="event-city"><ion-icon name="location-outline"></ion-icon>{{ $event->city }}</p>
-                <p class="event-participants"><ion-icon name="people-outline"></ion-icon>{{count($event->users)}} participantes</p>
-                <p class="event-owner"><ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
+                <h1 class="text">{{ $event->title }}</h1>
+                <p class="event-city text"><ion-icon name="location-outline"></ion-icon>{{ $event->city }}</p>
+                <p class="event-participants text"><ion-icon name="people-outline"></ion-icon>{{count($event->users)}} participantes</p>
+                <p class="event-owner text"><ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
 
                <form action="/events/join/{{$event->id}}"method='POST'>
                 @csrf
@@ -23,9 +23,9 @@
                </form>
             </div>
             <div class="col-md-12" id="description-container">
-                <h3>Sobre o evento:</h3>
-                <p class="event-escription">Dia do Evento {{date('d/m/Y',strtotime($event->date))}}</p>
-                <p class="event-escription">{{$event->description}}</p>
+                <h3 class='text'>Sobre o evento:</h3>
+                <p class="event-escription text">Dia do Evento {{date('d/m/Y',strtotime($event->date))}}</p>
+                <p class="event-escription text">{{$event->description}}</p>
             </div>
 
         </div>

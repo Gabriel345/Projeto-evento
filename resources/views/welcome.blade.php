@@ -10,7 +10,7 @@
                         <img class="img-image" src="/images/imagemhome.jpg" alt="desenho marcando eventos">
                     </div>
                     <div class="col-lg-5 py-5">
-                        <h4 class="sub-title">Conectando momentos, criando memórias: <br> <span id="text-sub"> Seu destino para eventos inesquecíveis! </span>
+                        <h4 class="sub-title text">Conectando momentos, criando memórias: <br> <span class="text" id="text-sub"> Seu destino para eventos inesquecíveis! </span>
                         </h4>
                         <div class="row">
                             <div class="col-lg-1">
@@ -21,7 +21,7 @@
                                 </svg>
                             </div>
                             <div class="col-lg-11">
-                                <p class="main-style"> Divulgue seu evento. </p>
+                                <p class="main-style text"> Divulgue seu evento. </p>
                             </div>
                             <div class="col-lg-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -31,7 +31,7 @@
                                 </svg>
                             </div>
                             <div class="col-lg-11">
-                                <p class="main-style"> Crie esperiências inesquecíveis.</p>
+                                <p class="main-style text"> Crie esperiências inesquecíveis.</p>
                             </div>
                             <div class="col-lg-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -41,7 +41,7 @@
                                 </svg>
                             </div>
                             <div class="col-lg-11">
-                                <p class="main-style"> Ajude quem precisa, faça o bem. </p>
+                                <p class="main-style text"> Ajude quem precisa, faça o bem. </p>
                             </div>
                         </div>
                     </div>
@@ -62,14 +62,14 @@
 
 
     <div id="search-container" class="col-md-12">
-        <h2>Busque um evento</h2>
+        <h2 class="text">Busque um evento</h2>
         <form action="/" method="GET">
             <label for="search"></label>
             <input type="text" id="search" name="search" class="form-control" placeholder="Procurar Evento">
         </form>
     </div>
     @if ($search)
-        <h2>Buscando por: {{ $search }}</h2>
+        <h2 class="text">Buscando por: {{ $search }}</h2>
     @else
         <div id="events-container" class="col-md-12">
             <h3>Proximos eventos</h3>

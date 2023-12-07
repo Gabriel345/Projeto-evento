@@ -16,8 +16,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
-            <div class="container-fluid navbar-container-fluid">
-                <a class="navbar-brand" href="/">Logo</a>
+            <div class="container-fluid navbar-container-fluid fixed-top">
+                <a class="navbar-brand" href="/"><img src="" alt="" srcset=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -58,6 +58,13 @@
             </div>
         </div>
 
+        <div>
+            <button class="botão-zoom aumentar-zoom botaoFixoZoom" id="increaseBtn"><img src="{{ asset('images/zoom_in_black_24dp.svg') }}"
+                    alt="icone tirar zoom tamanho arquivo: 423KB"></button>
+            <button class="botão-zoom diminuir-zoom botaoFixo" id="decreaseBtn"><img src="{{asset('images/zoom_out_black_24dp.svg')}}"
+                    alt="icone de zomm tamanho arquivo: 423KB"></button>
+        </div>
+
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -84,7 +91,7 @@
                         alt="Unigine logo">
                         </a> -->
 
-                    <p class="footer-text">
+                    <p class="footer-text text">
                         Este é o nosso site do projeto integrador III se tudo der certo não repetiremos de ano.
                         Deus seja conosco, amém.
                     </p>
@@ -182,6 +189,7 @@
         </div>
 
     </footer>
+    <script src="{{asset('js/zoom.js')}}"></script>
 </body>
 
 </html>

@@ -55,6 +55,8 @@
  
 }
 
+
+
 .img-fluid {
     margin-top: 2rem;
     height: 80%;
@@ -67,7 +69,7 @@
 }
 footer {
   padding-top: 15vh;
-  color: #bac0c4;
+  color: #393a3b;
 }
   .footer-text { margin-block: 20px 45px; }
   
