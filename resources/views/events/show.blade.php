@@ -11,6 +11,7 @@
                 <p class="event-city text"><ion-icon name="location-outline"></ion-icon>{{ $event->city }}</p>
                 <p class="event-participants text"><ion-icon name="people-outline"></ion-icon>{{count($event->users)}} participantes</p>
                 <p class="event-owner text"><ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
+                <p class="event-owner text">R${{$event->itens}}</p>
 
                <form action="/events/join/{{$event->id}}"method='POST'>
                 @csrf

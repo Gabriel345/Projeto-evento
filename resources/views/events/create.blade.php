@@ -33,6 +33,10 @@
                     <label for="title">Descrição:</label>
                     <textarea name="description" id="description"class="form-control form-control-lg" placeholder="descrição do evento"></textarea>
                 </div>
+                <div class="mt-3 mb-3">
+                    <label for="title">Preços</label>
+                    <input class="form-control form-control-lg" type="text" name="itens" value="R$000,00">
+                </div>
                 <input type="submit" class="btn btn-primary justify-content-end" value="Criar Evento">
             </form>
         </div>

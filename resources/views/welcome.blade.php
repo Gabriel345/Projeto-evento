@@ -89,9 +89,9 @@
 
                     <div class="event-info">
                         <p class="title">{{ $event->title }}</p>
+                        <p class="price"> R${{$event->itens}} </p>
                         <div class="separator"></div>
                         <p class="info"> {{ $event->city }}</p>
-                        <p class="price"> free </p>
 
                         <div class="additional-info">
                             <p class="info">

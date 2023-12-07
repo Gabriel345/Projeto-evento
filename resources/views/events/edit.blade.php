@@ -36,6 +36,10 @@
             <label for="title">Descrição:</label>
            <textarea name="description" id="description"class="form-control form-control-lg" placeholder="descrição do evento">{{$event->description}}</textarea>
         </div>
+        <div class="form-group mt-3">
+            <label for="title">Preço:</label>
+            <input class="form-control form-control-lg" type="text" name="itens" value="{{$event->itens}}">
+        </div>
         <input type="submit" class="btn btn-primary" value="Salvar">
      </form>
     </div>
