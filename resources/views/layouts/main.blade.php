@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
             <div class="container-fluid navbar-container-fluid fixed-top">
-                <a class="navbar-brand" href="/"><img src="" alt="" srcset=""></a>
+                <a class="navbar-brand" href="/"><img class="logo" src="{{asset('images/logo.png')}}" alt="Logo" srcset=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>

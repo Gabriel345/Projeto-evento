@@ -8,6 +8,9 @@
   font-size: 1.5rem;
   color: #fff;
 }
+.logo{
+  width: 3.5rem;
+}
 
 
 #search-container {
@@ -22,7 +25,7 @@
     box-shadow: 2px 4px 10px gray;
 
 }
-#events-container {
+/* #events-container {
     text-align: center;
     
 
@@ -66,7 +69,7 @@
 }
 #info-container {
     margin-top: 3.2rem;
-}
+} */
 footer {
   padding-top: 15vh;
   color: #393a3b;
