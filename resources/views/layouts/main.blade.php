@@ -17,7 +17,8 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
             <div class="container-fluid navbar-container-fluid fixed-top">
-                <a class="navbar-brand" href="/"><img class="logo" src="{{asset('images/logo.png')}}" alt="Logo" srcset=""></a>
+                <a class="navbar-brand" href="/"><img class="logo" src="{{ asset('images/logo.png') }}"
+                        alt="Logo" srcset=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -43,6 +44,16 @@
                                 <a class="nav-link" href="/register">Cadastrar</a>
                             </li>
                         @endguest
+                        @auth
+                        <li class="nav-item">
+
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <button class="nav-link" type="submit">Deslogar</button>
+                            </form>
+                        </li>
+
+                            @endauth
                     </ul>
                 </div>
             </div>
@@ -59,9 +70,11 @@
         </div>
 
         <div>
-            <button class="botão-zoom aumentar-zoom botaoFixoZoom" id="increaseBtn"><img src="{{ asset('images/zoom_in_black_24dp.svg') }}"
+            <button class="botão-zoom aumentar-zoom botaoFixoZoom" id="increaseBtn"><img
+                    src="{{ asset('images/zoom_in_black_24dp.svg') }}"
                     alt="icone tirar zoom tamanho arquivo: 423KB"></button>
-            <button class="botão-zoom diminuir-zoom botaoFixo" id="decreaseBtn"><img src="{{asset('images/zoom_out_black_24dp.svg')}}"
+            <button class="botão-zoom diminuir-zoom botaoFixo" id="decreaseBtn"><img
+                    src="{{ asset('images/zoom_out_black_24dp.svg') }}"
                     alt="icone de zomm tamanho arquivo: 423KB"></button>
         </div>
 
@@ -189,7 +202,7 @@
         </div>
 
     </footer>
-    <script src="{{asset('js/zoom.js')}}"></script>
+    <script src="{{ asset('js/zoom.js') }}"></script>
 </body>
 
 </html>
