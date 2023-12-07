@@ -203,6 +203,7 @@
 
     </footer>
     <script src="{{ asset('js/zoom.js') }}"></script>
+    <script src="{{asset('js/cookie.js')}}"></script>
 </body>
 
 </html>

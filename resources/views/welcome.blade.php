@@ -71,10 +71,12 @@
     @if ($search)
         <h2 class="text">Buscando por: {{ $search }}</h2>
     @else
-        <div id="events-container" class="col-md-12">
-            <h3>Proximos eventos</h3>
+    <div id="events-container" class="col-md-12 d-flex justify-content-center">
+        <div class="text-center">
+            <h3>Próximos eventos</h3>
             <p>Veja os eventos dos próximos dias</p>
         </div>
+    </div>
     @endif
 
     <div class="container">
@@ -89,9 +91,9 @@
 
                     <div class="event-info">
                         <p class="title">{{ $event->title }}</p>
-                        <p class="price"> R${{$event->itens}} </p>
                         <div class="separator"></div>
                         <p class="info"> {{ $event->city }}</p>
+                        <p class="price"> R${{$event->itens}} </p>
 
                         <div class="additional-info">
                             <p class="info">
@@ -118,5 +120,7 @@
     @elseif (count($events) == 0)
         <p>Não há eventos disponiveis</p>
     @endif
+    <script src="{{asset('js/cookie.js')}}"></script>
+
 
 @endsection
