@@ -7,7 +7,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-6 py-2">
-                        <img class="img-image" src="/images/imagemhome.jpg" alt="desenho marcando eventos">
+                        <img class="img-image" src="/images/imagemhome.png" alt="desenho marcando eventos">
                     </div>
                     <div class="col-lg-5 py-5">
                         <h4 class="sub-title text">Conectando momentos, criando memórias: <br> <span class="text" id="text-sub"> Seu destino para eventos inesquecíveis! </span>

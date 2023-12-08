@@ -76,6 +76,8 @@
             <button class="botão-zoom diminuir-zoom botaoFixo" id="decreaseBtn"><img
                     src="{{ asset('images/zoom_out_black_24dp.svg') }}"
                     alt="icone de zomm tamanho arquivo: 423KB"></button>
+                    
+                    <button class="toggle-dark-mode botaoFixoAuto" onclick="toggleDarkMode()"><ion-icon name="moon-outline"></ion-icon></button>
         </div>
 
         <div vw class="enabled">
@@ -204,6 +206,8 @@
     </footer>
     <script src="{{ asset('js/zoom.js') }}"></script>
     <script src="{{asset('js/cookie.js')}}"></script>
+    <script src="{{asset('js/darkmode.js')}}"></script>
+
 </body>
 
 </html>
